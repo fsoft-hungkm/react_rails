@@ -40,3 +40,4 @@ gem 'spring',        group: :development
 # Use debugger
 gem 'byebug', group: [:development, :test]
 
+gem 'react-rails', '~> 1.0'
