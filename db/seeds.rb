@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Record.create title: 'Record 1', date: Date.today, amount: 500
+Record.create title: 'Record 2', date: Date.today, amount: -100
+Record.create title: 'Record 3', date: Date.today, amount: 100
+Record.create title: 'Record 4', date: Date.today, amount: 300
