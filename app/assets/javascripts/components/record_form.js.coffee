@@ -3,17 +3,21 @@
 		title: ''
 		amount: ''
 		date: ''
+	
 	hanleChange: (e) ->
 		name = e.target.name
 		@setState "#{name}": e.target.value
+	
 	valid: ->
 		@state.title && @state.amount && @state.date
+	
 	handleSubmit: (e) ->
 		e.preventDefault()
 		$.post '', { record: @state }, (data) =>
         @props.handleNewRecord data
         @setState @getInitialState()
       , 'JSON'
+	
 	render: ->
 		React.DOM.form
 			className: 'form-inline'
