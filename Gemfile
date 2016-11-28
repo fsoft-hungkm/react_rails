@@ -41,3 +41,6 @@ gem 'spring',        group: :development
 gem 'byebug', group: [:development, :test]
 
 gem 'react-rails', '~> 1.0'
+
+# Asset precompile for production server
+gem 'rails_12factor', group: :production
